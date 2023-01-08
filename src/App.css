@@ -30,7 +30,7 @@ img{
 #main > nav, 
 #main > aside {
   flex: 0 0 20vw;
-  background: rgb(1, 61, 69);
+  background: rgb(1, 69, 16);
 }
 #main > nav {
   order: -1;
@@ -40,7 +40,7 @@ header{
   text-align:center;
 }
 header, footer {
-  background: rgb(156, 195, 195);
+  background: rgb(165, 195, 156);
   height: 8vh;
 }
 header, footer, article, nav, aside {
