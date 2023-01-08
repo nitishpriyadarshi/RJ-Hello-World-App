@@ -1,37 +1,48 @@
 .App {
   text-align: center;
-  margin-top: 6em;
-  margin-left: 10em;
-  margin-right: 10em;
-  background-color: rgb(58, 133, 74);
-  border: 5px solid rgb(122, 146, 152);
 }
 
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img{
+  width:300px;
+  height:200px
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-
-.error-output {
+.error_output{
   margin-left: 10px;
   font-size: 12px;
-  font-style:oblique;
-  color: blue;
+  font-style: italic;
+  color: red;
 }
 
-body {
-  background-color: rgb(113, 136, 91);
+* {
+  box-sizing: border-box; 
 }
-
-.image {
-  height: 15em;
-  width: 20em;
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 2px 2px 6px 0px  rgba(3,3,3,3.3);
+  min-height: 80vh;
+}
+#main > nav, 
+#main > aside {
+  flex: 0 0 20vw;
+  background: rgb(1, 61, 69);
+}
+#main > nav {
+  order: -1;
+}
+header{
+  padding-bottom: 100em;
+  text-align:center;
+}
+header, footer {
+  background: rgb(156, 195, 195);
+  height: 8vh;
+}
+header, footer, article, nav, aside {
+  padding: 2em;
 }
